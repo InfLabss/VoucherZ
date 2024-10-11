@@ -1,0 +1,26 @@
+name: VoucherZ
+version: '1.0'
+main: dev.infnoxx.voucherZ.VoucherZ
+author: Ammar
+description: A plugin that lets user create redeemable vouchers
+api-version: '1.21'
+commands:
+  voucher:
+    description: Main voucher command to give or reload vouchers.
+    usage: /<command> [give|reload] <arguments>
+    permission: voucher.use
+    aliases: [vc]
+
+permissions:
+  voucher.use:
+    description: Allows players to use the /voucher command.
+    default: true
+  voucher.reload:
+    description: Allows players to reload the voucher configuration.
+    default: op
+  voucher.give:
+    description: Allows players to give vouchers to others.
+    default: op
+  voucher.vip:
+    description: Allows the use of VIP-specific vouchers.
+    default: true

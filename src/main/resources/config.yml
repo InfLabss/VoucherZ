@@ -1,0 +1,30 @@
+vouchers:
+  VIPVoucher:
+    name: "&6VIP Voucher"
+    lore:
+      - "&7Right-click to redeem"
+      - "&eGrants VIP rank!"
+    material: "PAPER"
+    command: "lp user %player% parent add vip"
+    permission: "voucher.vip" # Optional. If not specified, anyone can use this voucher.
+
+  MoneyVoucher:
+    name: "&2Money Voucher"
+    lore:
+      - "&7Right-click to redeem"
+      - "&aReceive $1000 in-game cash!"
+    material: "GOLD_INGOT"
+    command: "eco give %player% 1000"
+    # No permission required; anyone can use this voucher.
+
+  FlyVoucher:
+    name: "&3Fly Voucher"
+    lore:
+      - "&7Right-click to redeem"
+      - "&bGrants fly ability!"
+    material: "FEATHER"
+    command: "essentials.fly %player%"
+    permission: "voucher.fly" # Optional permission requirement.
+
+settings:
+  default-permission: "voucher.use" # Default permission if none specified for vouchers.
