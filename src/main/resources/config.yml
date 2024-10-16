@@ -1,30 +1,42 @@
+# VoucherZ by InfLabs
+# Below is an example of a Voucher
+
 vouchers:
-  VIPVoucher:
-    name: "&6VIP Voucher"
+  # Name of the voucher
+  DragonLordVoucher:
+    # Display name of the voucher
+    name: "&4&lDragon &6&lLord &7&lVoucher"
     lore:
-      - "&7Right-click to redeem"
-      - "&eGrants VIP rank!"
-    material: "PAPER"
-    command: "lp user %player% parent add vip"
-    permission: "voucher.vip" # Optional. If not specified, anyone can use this voucher.
-
-  MoneyVoucher:
-    name: "&2Money Voucher"
-    lore:
-      - "&7Right-click to redeem"
-      - "&aReceive $1000 in-game cash!"
-    material: "GOLD_INGOT"
-    command: "eco give %player% 1000"
-    # No permission required; anyone can use this voucher.
-
-  FlyVoucher:
-    name: "&3Fly Voucher"
-    lore:
-      - "&7Right-click to redeem"
-      - "&bGrants fly ability!"
-    material: "FEATHER"
-    command: "essentials.fly %player%"
-    permission: "voucher.fly" # Optional permission requirement.
-
-settings:
-  default-permission: "voucher.use" # Default permission if none specified for vouchers.
+      - "&7Right-click to unleash the &4fire &7of the ancient dragons."
+      - " "
+      - "&6Grants you the &4&lDragon Lord &6Rank!"
+      - " "
+      - "&8&oThe ground trembles as your power awakens..."
+      - "&8&oA fiery force burns within, waiting to be unleashed."
+      - " "
+      - "&7Master the flames of the &4&lancient &7dragons."
+      - "&7Command power feared by all who stand in your way."
+      - " "
+      - "&6&lWill you rise as the true Dragon Lord?"
+    # Material to be used for the voucher
+    material: "BLAZE_ROD"
+    # Command to be executed
+    command: "lp user %player% parent set dragonlord"
+    # Permission [voucher.use is default]
+    permission: "voucher.use"
+    # Sound effect to be played
+    sound: "ENTITY_ENDER_DRAGON_GROWL"
+    # The animation particle
+    particles: "FLAME"
+    # Message sent after the user redeems the voucher
+    redeem-message:
+      - "&8&m----------------------------"
+      - " "
+      - "&4&l✦ &6The ancient flames bow to you, &4&oDragon Lord."
+      - " "
+      - "&7You now wield the fiery strength of the dragons."
+      - "&7The skies tremble before your power."
+      - " "
+      - "&8&oThe flames whisper your legacy... &7&oWield it with honor."
+      - " "
+      - "&8&m----------------------------"

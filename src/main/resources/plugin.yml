@@ -1,5 +1,5 @@
 name: VoucherZ
-version: '1.0'
+version: '1.1'
 main: dev.infnoxx.voucherZ.VoucherZ
 author: Ammar
 description: A plugin that lets user create redeemable vouchers

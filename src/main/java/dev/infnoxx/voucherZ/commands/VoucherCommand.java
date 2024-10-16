@@ -20,7 +20,7 @@ public class VoucherCommand implements TabExecutor {
     private final VoucherZ plugin;
     private final VoucherManager voucherManager;
     private final MiniMessage miniMessage;
-    private static final String PREFIX = "<gray>[<gold>VoucherZ</gold>]</gray> "; // Professional prefix
+    private static final String PREFIX = "<gray>[<gold>VoucherZ</gold>]</gray> ";
 
     public VoucherCommand(VoucherZ plugin, VoucherManager voucherManager) {
         this.plugin = plugin;
